@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-2","id":1},{"content":"pool-1-thread-3","id":2},{"content":"pool-1-thread-5","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-1","id":5}];
+var items = [{"id":1,"group":1,"content":"testcases\/endpoints\/location\/location[1:6]","start":1620201305925,"end":1620201306633,"title":"testcases\/endpoints\/location\/location[1:6] 03:55:05.925-03:55:06.633 Validate the response code from the location endpoint"},{"id":2,"group":2,"content":"testcases\/endpoints\/location\/location[2:11]","start":1620201305931,"end":1620201306674,"title":"testcases\/endpoints\/location\/location[2:11] 03:55:05.931-03:55:06.674 Validate the content type from the location endpoint"},{"id":3,"group":3,"content":"testcases\/endpoints\/location\/location[3:17]","start":1620201306007,"end":1620201306644,"title":"testcases\/endpoints\/location\/location[3:17] 03:55:06.007-03:55:06.644 Validate the response content from the location endpoint"},{"id":4,"group":4,"content":"testcases\/endpoints\/location\/location[4:24]","start":1620201306241,"end":1620201306717,"title":"testcases\/endpoints\/location\/location[4:24] 03:55:06.241-03:55:06.717 Validate that the page not found response is being handle on the character endpoint"},{"id":5,"group":3,"content":"testcases\/endpoints\/episode\/episode[1:6]","start":1620201304070,"end":1620201305436,"title":"testcases\/endpoints\/episode\/episode[1:6] 03:55:04.070-03:55:05.436 Validate the response code from the episode endpoint"},{"id":6,"group":3,"content":"testcases\/endpoints\/episode\/episode[2:11]","start":1620201305448,"end":1620201306001,"title":"testcases\/endpoints\/episode\/episode[2:11] 03:55:05.448-03:55:06.001 Validate the content type from the episode endpoint"},{"id":7,"group":4,"content":"testcases\/endpoints\/episode\/episode[3:17]","start":1620201305671,"end":1620201306235,"title":"testcases\/endpoints\/episode\/episode[3:17] 03:55:05.671-03:55:06.235 Validate the response content from the episode endpoint"},{"id":8,"group":5,"content":"testcases\/endpoints\/episode\/episode[4:24]","start":1620201305767,"end":1620201306270,"title":"testcases\/endpoints\/episode\/episode[4:24] 03:55:05.767-03:55:06.270 Validate that the page not found response is being handle on the episode endpoint"},{"id":9,"group":5,"content":"testcases\/endpoints\/character\/character[1:6]","start":1620201304040,"end":1620201305760,"title":"testcases\/endpoints\/character\/character[1:6] 03:55:04.040-03:55:05.760 Validate the response code from the character endpoint"},{"id":10,"group":1,"content":"testcases\/endpoints\/character\/character[2:11]","start":1620201304053,"end":1620201305915,"title":"testcases\/endpoints\/character\/character[2:11] 03:55:04.053-03:55:05.915 Validate the content type from the character endpoint"},{"id":11,"group":2,"content":"testcases\/endpoints\/character\/character[3:17]","start":1620201304037,"end":1620201305920,"title":"testcases\/endpoints\/character\/character[3:17] 03:55:04.037-03:55:05.920 Validate the response content from the character endpoint"},{"id":12,"group":4,"content":"testcases\/endpoints\/character\/character[4:24]","start":1620201304105,"end":1620201305657,"title":"testcases\/endpoints\/character\/character[4:24] 03:55:04.105-03:55:05.657 Validate that the page not found response is being handle on the character endpoint"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

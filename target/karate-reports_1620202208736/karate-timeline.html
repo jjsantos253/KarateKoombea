@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-5","id":1},{"content":"pool-1-thread-1","id":2},{"content":"pool-1-thread-4","id":3},{"content":"pool-1-thread-2","id":4},{"content":"pool-1-thread-3","id":5}];
+var items = [{"id":1,"group":1,"content":"testcases\/endpoints\/location\/location[1:6]","start":1620202090714,"end":1620202091505,"title":"testcases\/endpoints\/location\/location[1:6] 04:08:10.714-04:08:11.505 Validate the response code from the location endpoint"},{"id":2,"group":2,"content":"testcases\/endpoints\/location\/location[2:11]","start":1620202090807,"end":1620202091528,"title":"testcases\/endpoints\/location\/location[2:11] 04:08:10.807-04:08:11.528 Validate the content type from the location endpoint"},{"id":3,"group":3,"content":"testcases\/endpoints\/location\/location[3:17]","start":1620202090848,"end":1620202091551,"title":"testcases\/endpoints\/location\/location[3:17] 04:08:10.848-04:08:11.551 Validate the response content from the location endpoint"},{"id":4,"group":4,"content":"testcases\/endpoints\/location\/location[4:24]","start":1620202090991,"end":1620202091485,"title":"testcases\/endpoints\/location\/location[4:24] 04:08:10.991-04:08:11.485 Validate that the page not found response is being handle on the character endpoint"},{"id":5,"group":5,"content":"testcases\/endpoints\/episode\/episode[1:6]","start":1620202090238,"end":1620202090683,"title":"testcases\/endpoints\/episode\/episode[1:6] 04:08:10.238-04:08:10.683 Validate the response code from the episode endpoint"},{"id":6,"group":1,"content":"testcases\/endpoints\/episode\/episode[2:11]","start":1620202090271,"end":1620202090707,"title":"testcases\/endpoints\/episode\/episode[2:11] 04:08:10.271-04:08:10.707 Validate the content type from the episode endpoint"},{"id":7,"group":3,"content":"testcases\/endpoints\/episode\/episode[3:17]","start":1620202090363,"end":1620202090842,"title":"testcases\/endpoints\/episode\/episode[3:17] 04:08:10.363-04:08:10.842 Validate the response content from the episode endpoint"},{"id":8,"group":5,"content":"testcases\/endpoints\/episode\/episode[4:24]","start":1620202090691,"end":1620202091232,"title":"testcases\/endpoints\/episode\/episode[4:24] 04:08:10.691-04:08:11.232 Validate that the page not found response is being handle on the episode endpoint"},{"id":9,"group":2,"content":"testcases\/endpoints\/character\/character[1:6]","start":1620202088709,"end":1620202090190,"title":"testcases\/endpoints\/character\/character[1:6] 04:08:08.709-04:08:10.190 Validate the response code from the character endpoint"},{"id":10,"group":4,"content":"testcases\/endpoints\/character\/character[2:11]","start":1620202088711,"end":1620202090206,"title":"testcases\/endpoints\/character\/character[2:11] 04:08:08.711-04:08:10.206 Validate the content type from the character endpoint"},{"id":11,"group":5,"content":"testcases\/endpoints\/character\/character[3:17]","start":1620202088709,"end":1620202090225,"title":"testcases\/endpoints\/character\/character[3:17] 04:08:08.709-04:08:10.225 Validate the response body getting all the characters"},{"id":12,"group":3,"content":"testcases\/endpoints\/character\/character[4:24]","start":1620202088769,"end":1620202090354,"title":"testcases\/endpoints\/character\/character[4:24] 04:08:08.769-04:08:10.354 Validate the response body getting a single the character"},{"id":13,"group":1,"content":"testcases\/endpoints\/character\/character[5:31]","start":1620202088746,"end":1620202090262,"title":"testcases\/endpoints\/character\/character[5:31] 04:08:08.746-04:08:10.262 Validate the response body getting multiple characters"},{"id":14,"group":2,"content":"testcases\/endpoints\/character\/character[6:38]","start":1620202090203,"end":1620202090797,"title":"testcases\/endpoints\/character\/character[6:38] 04:08:10.203-04:08:10.797 Validate the response body through a query","className":"failed"},{"id":15,"group":4,"content":"testcases\/endpoints\/character\/character[7:45]","start":1620202090216,"end":1620202090982,"title":"testcases\/endpoints\/character\/character[7:45] 04:08:10.216-04:08:10.982 Validate that the page not found response is being handle on the character endpoint"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>testcases.endpoints.location.location</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-05-05 04:11:02 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Validate the response code from the location endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>Validate the content type from the location endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:17]"><span>[3:17]</span> <span>Validate the response content from the location endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:24]"><span>[4:24]</span> <span>Validate that the page not found response is being handle on the character endpoint</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">testcases/endpoints/location/location.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validate that the location endpoint is retorning the right response body and status</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Validate the response code from the location endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>946</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:11:01.324 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;location&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">945</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">04:11:01.330 request:
+1 &gt; GET https://rickandmortyapi.com/api/location
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:11:02.271 response time in milliseconds: 939
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: max-age=259200
+1 &lt; cache-control: public
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 05 May 2021 08:11:02 GMT
+1 &lt; etag: W/&quot;5726-q/3KmIeCg5GoVW/GF8f6IOZK3xo&quot;
+1 &lt; expires: Sat, 08 May 2021 08:11:02 GMT
+1 &lt; server: Netlify
+1 &lt; x-country: DO
+1 &lt; x-language: 
+1 &lt; x-nf-request-id: 5507b88e-98d7-4912-952f-fb264f9e0ef5
+1 &lt; vary: Accept-Encoding
+1 &lt; age: 0
+1 &lt; x-powered-by: Express
+1 &lt; transfer-encoding: chunked
+{&quot;results&quot;:[{&quot;created&quot;:&quot;2017-11-10T12:42:04.162Z&quot;,&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/71&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/116&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/117&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/120&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/127&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/155&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/303&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;],&quot;id&quot;:1,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/1&quot;},{&quot;created&quot;:&quot;2017-11-10T13:06:38.182Z&quot;,&quot;name&quot;:&quot;Abadango&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/6&quot;],&quot;id&quot;:2,&quot;type&quot;:&quot;Cluster&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/2&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:13.191Z&quot;,&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/8&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/42&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/43&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/44&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/48&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/53&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/56&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/61&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/69&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/72&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/73&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/74&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/77&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/78&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/85&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/86&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/95&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/118&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/119&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/123&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/135&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/143&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/152&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/164&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/165&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/187&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/200&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/206&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/209&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/215&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/220&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/229&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/231&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/235&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/267&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/274&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/278&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/281&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/283&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/284&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/285&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/286&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/287&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/288&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/289&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/291&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/294&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/298&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/299&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/322&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/325&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/328&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/330&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/345&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/359&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/366&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/378&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/385&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/392&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/461&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/462&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/463&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/464&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/465&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/466&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/472&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/473&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/474&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/475&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/476&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/477&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/478&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/479&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/480&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/481&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/482&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/483&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/484&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/485&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/486&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/487&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/488&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/489&quot;],&quot;id&quot;:3,&quot;type&quot;:&quot;Space station&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/3&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:20.569Z&quot;,&quot;name&quot;:&quot;Worldender&#39;s lair&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/10&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/81&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/208&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/226&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/340&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/375&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/382&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;],&quot;id&quot;:4,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/4&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:46.060Z&quot;,&quot;name&quot;:&quot;Anatomy Park&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/96&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/97&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/98&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/99&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/100&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/101&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/108&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/268&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/300&quot;],&quot;id&quot;:5,&quot;type&quot;:&quot;Microverse&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/5&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:09.102Z&quot;,&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/51&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/54&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/121&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/126&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/134&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/145&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/157&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/173&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/184&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/205&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/214&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/222&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/223&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/224&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/225&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/250&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/254&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/260&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/264&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/275&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/277&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/279&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/312&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/314&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/315&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/316&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/317&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/318&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/334&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/351&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/367&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/370&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/373&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/403&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/406&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/407&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/408&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/409&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/410&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/411&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/412&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/413&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/414&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/415&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/416&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/417&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/418&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/457&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/458&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/459&quot;],&quot;id&quot;:6,&quot;type&quot;:&quot;TV&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/6&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:17.136Z&quot;,&quot;name&quot;:&quot;Immortality Field Resort&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/204&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/320&quot;],&quot;id&quot;:7,&quot;type&quot;:&quot;Resort&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/7&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:22.551Z&quot;,&quot;name&quot;:&quot;Post-Apocalyptic Earth&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/25&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/52&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/68&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/110&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/111&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/140&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/156&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/228&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/323&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/342&quot;],&quot;id&quot;:8,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Post-Apocalyptic Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/8&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:29.566Z&quot;,&quot;name&quot;:&quot;Purge Planet&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/139&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/202&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/273&quot;],&quot;id&quot;:9,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/9&quot;},{&quot;created&quot;:&quot;2017-11-18T11:21:51.643Z&quot;,&quot;name&quot;:&quot;Venzenulon 7&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/33&quot;],&quot;id&quot;:10,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/10&quot;},{&quot;created&quot;:&quot;2017-11-18T11:26:03.325Z&quot;,&quot;name&quot;:&quot;Bepis 9&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;],&quot;id&quot;:11,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/11&quot;},{&quot;created&quot;:&quot;2017-11-18T11:29:27.857Z&quot;,&quot;name&quot;:&quot;Cronenberg Earth&quot;,&quot;residents&quot;:[],&quot;id&quot;:12,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Cronenberg Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/12&quot;},{&quot;created&quot;:&quot;2017-11-18T11:30:29.780Z&quot;,&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/55&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/132&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/146&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/148&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/163&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/178&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/310&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/387&quot;],&quot;id&quot;:13,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/13&quot;},{&quot;created&quot;:&quot;2017-11-18T11:31:15.248Z&quot;,&quot;name&quot;:&quot;Giant&#39;s Town&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/89&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/399&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/400&quot;],&quot;id&quot;:14,&quot;type&quot;:&quot;Fantasy town&quot;,&quot;dimension&quot;:&quot;Fantasy Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/14&quot;},{&quot;created&quot;:&quot;2017-11-18T11:32:26.752Z&quot;,&quot;name&quot;:&quot;Bird World&quot;,&quot;residents&quot;:[],&quot;id&quot;:15,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/15&quot;},{&quot;created&quot;:&quot;2017-11-18T11:43:20.075Z&quot;,&quot;name&quot;:&quot;St. Gloopy Noops Hospital&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/105&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/263&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/321&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/383&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/384&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/455&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/456&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/460&quot;],&quot;id&quot;:16,&quot;type&quot;:&quot;Space station&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/16&quot;},{&quot;created&quot;:&quot;2017-11-18T11:41:08.486Z&quot;,&quot;name&quot;:&quot;Earth (5-126)&quot;,&quot;residents&quot;:[],&quot;id&quot;:17,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Dimension 5-126&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/17&quot;},{&quot;created&quot;:&quot;2017-11-18T11:46:22.933Z&quot;,&quot;name&quot;:&quot;Mr. Goldenfold&#39;s dream&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/63&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/80&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/221&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/246&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/304&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/305&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/306&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/396&quot;],&quot;id&quot;:18,&quot;type&quot;:&quot;Dream&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/18&quot;},{&quot;created&quot;:&quot;2017-11-18T11:39:52.165Z&quot;,&quot;name&quot;:&quot;Gromflom Prime&quot;,&quot;residents&quot;:[],&quot;id&quot;:19,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/19&quot;},{&quot;created&quot;:&quot;2017-11-18T19:33:01.173Z&quot;,&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/9&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/13&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/50&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/59&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/64&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/66&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/76&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/103&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/107&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/109&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/113&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/115&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/124&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/128&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/137&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/138&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/141&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/147&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/149&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/151&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/154&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/166&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/167&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/170&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/171&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/172&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/182&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/185&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/189&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/190&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/210&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/217&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/218&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/219&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/227&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/230&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/233&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/234&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/236&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/237&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/243&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/244&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/245&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/248&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/255&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/259&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/262&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/265&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/276&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/280&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/292&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/293&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/324&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/327&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/332&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/335&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/341&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/346&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/347&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/352&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/353&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/354&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/357&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/360&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/361&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/363&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/365&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/374&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/377&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/390&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/391&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/401&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/402&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/423&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/437&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/438&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/439&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/440&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/452&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/453&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/467&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/468&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/469&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/471&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/492&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/493&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/497&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/509&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/510&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/511&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/512&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/513&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/514&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/516&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/517&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/523&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/524&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/526&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/534&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/535&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/536&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/537&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/538&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/539&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/540&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/541&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/561&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/562&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/564&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/570&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/575&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/584&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/585&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/586&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/588&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/590&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/591&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/592&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/667&quot;],&quot;id&quot;:20,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/20&quot;}],&quot;info&quot;:{&quot;next&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location?page=2&quot;,&quot;pages&quot;:6,&quot;prev&quot;:null,&quot;count&quot;:108}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">Validate the content type from the location endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>704</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:11:01.588 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;location&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">702</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">04:11:01.593 request:
+1 &gt; GET https://rickandmortyapi.com/api/location
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:11:02.292 response time in milliseconds: 698
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: max-age=259200
+1 &lt; cache-control: public
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 05 May 2021 08:11:02 GMT
+1 &lt; etag: W/&quot;5726-q/3KmIeCg5GoVW/GF8f6IOZK3xo&quot;
+1 &lt; expires: Sat, 08 May 2021 08:11:02 GMT
+1 &lt; server: Netlify
+1 &lt; x-language: 
+1 &lt; vary: Accept-Encoding
+1 &lt; x-nf-request-id: a641fb72-1e6c-45eb-b26e-bec4e263526e
+1 &lt; age: 1
+1 &lt; x-country: DO
+1 &lt; x-powered-by: Express
+{&quot;results&quot;:[{&quot;created&quot;:&quot;2017-11-10T12:42:04.162Z&quot;,&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/71&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/116&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/117&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/120&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/127&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/155&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/303&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;],&quot;id&quot;:1,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/1&quot;},{&quot;created&quot;:&quot;2017-11-10T13:06:38.182Z&quot;,&quot;name&quot;:&quot;Abadango&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/6&quot;],&quot;id&quot;:2,&quot;type&quot;:&quot;Cluster&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/2&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:13.191Z&quot;,&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/8&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/42&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/43&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/44&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/48&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/53&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/56&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/61&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/69&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/72&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/73&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/74&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/77&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/78&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/85&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/86&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/95&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/118&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/119&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/123&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/135&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/143&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/152&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/164&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/165&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/187&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/200&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/206&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/209&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/215&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/220&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/229&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/231&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/235&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/267&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/274&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/278&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/281&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/283&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/284&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/285&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/286&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/287&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/288&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/289&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/291&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/294&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/298&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/299&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/322&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/325&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/328&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/330&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/345&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/359&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/366&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/378&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/385&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/392&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/461&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/462&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/463&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/464&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/465&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/466&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/472&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/473&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/474&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/475&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/476&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/477&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/478&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/479&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/480&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/481&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/482&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/483&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/484&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/485&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/486&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/487&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/488&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/489&quot;],&quot;id&quot;:3,&quot;type&quot;:&quot;Space station&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/3&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:20.569Z&quot;,&quot;name&quot;:&quot;Worldender&#39;s lair&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/10&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/81&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/208&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/226&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/340&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/375&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/382&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;],&quot;id&quot;:4,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/4&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:46.060Z&quot;,&quot;name&quot;:&quot;Anatomy Park&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/96&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/97&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/98&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/99&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/100&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/101&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/108&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/268&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/300&quot;],&quot;id&quot;:5,&quot;type&quot;:&quot;Microverse&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/5&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:09.102Z&quot;,&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/51&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/54&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/121&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/126&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/134&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/145&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/157&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/173&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/184&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/205&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/214&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/222&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/223&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/224&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/225&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/250&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/254&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/260&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/264&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/275&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/277&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/279&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/312&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/314&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/315&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/316&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/317&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/318&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/334&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/351&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/367&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/370&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/373&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/403&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/406&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/407&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/408&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/409&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/410&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/411&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/412&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/413&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/414&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/415&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/416&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/417&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/418&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/457&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/458&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/459&quot;],&quot;id&quot;:6,&quot;type&quot;:&quot;TV&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/6&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:17.136Z&quot;,&quot;name&quot;:&quot;Immortality Field Resort&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/204&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/320&quot;],&quot;id&quot;:7,&quot;type&quot;:&quot;Resort&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/7&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:22.551Z&quot;,&quot;name&quot;:&quot;Post-Apocalyptic Earth&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/25&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/52&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/68&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/110&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/111&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/140&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/156&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/228&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/323&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/342&quot;],&quot;id&quot;:8,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Post-Apocalyptic Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/8&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:29.566Z&quot;,&quot;name&quot;:&quot;Purge Planet&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/139&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/202&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/273&quot;],&quot;id&quot;:9,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/9&quot;},{&quot;created&quot;:&quot;2017-11-18T11:21:51.643Z&quot;,&quot;name&quot;:&quot;Venzenulon 7&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/33&quot;],&quot;id&quot;:10,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/10&quot;},{&quot;created&quot;:&quot;2017-11-18T11:26:03.325Z&quot;,&quot;name&quot;:&quot;Bepis 9&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;],&quot;id&quot;:11,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/11&quot;},{&quot;created&quot;:&quot;2017-11-18T11:29:27.857Z&quot;,&quot;name&quot;:&quot;Cronenberg Earth&quot;,&quot;residents&quot;:[],&quot;id&quot;:12,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Cronenberg Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/12&quot;},{&quot;created&quot;:&quot;2017-11-18T11:30:29.780Z&quot;,&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/55&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/132&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/146&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/148&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/163&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/178&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/310&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/387&quot;],&quot;id&quot;:13,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/13&quot;},{&quot;created&quot;:&quot;2017-11-18T11:31:15.248Z&quot;,&quot;name&quot;:&quot;Giant&#39;s Town&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/89&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/399&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/400&quot;],&quot;id&quot;:14,&quot;type&quot;:&quot;Fantasy town&quot;,&quot;dimension&quot;:&quot;Fantasy Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/14&quot;},{&quot;created&quot;:&quot;2017-11-18T11:32:26.752Z&quot;,&quot;name&quot;:&quot;Bird World&quot;,&quot;residents&quot;:[],&quot;id&quot;:15,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/15&quot;},{&quot;created&quot;:&quot;2017-11-18T11:43:20.075Z&quot;,&quot;name&quot;:&quot;St. Gloopy Noops Hospital&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/105&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/263&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/321&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/383&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/384&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/455&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/456&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/460&quot;],&quot;id&quot;:16,&quot;type&quot;:&quot;Space station&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/16&quot;},{&quot;created&quot;:&quot;2017-11-18T11:41:08.486Z&quot;,&quot;name&quot;:&quot;Earth (5-126)&quot;,&quot;residents&quot;:[],&quot;id&quot;:17,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Dimension 5-126&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/17&quot;},{&quot;created&quot;:&quot;2017-11-18T11:46:22.933Z&quot;,&quot;name&quot;:&quot;Mr. Goldenfold&#39;s dream&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/63&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/80&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/221&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/246&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/304&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/305&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/306&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/396&quot;],&quot;id&quot;:18,&quot;type&quot;:&quot;Dream&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/18&quot;},{&quot;created&quot;:&quot;2017-11-18T11:39:52.165Z&quot;,&quot;name&quot;:&quot;Gromflom Prime&quot;,&quot;residents&quot;:[],&quot;id&quot;:19,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/19&quot;},{&quot;created&quot;:&quot;2017-11-18T19:33:01.173Z&quot;,&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/9&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/13&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/50&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/59&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/64&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/66&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/76&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/103&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/107&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/109&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/113&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/115&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/124&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/128&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/137&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/138&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/141&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/147&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/149&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/151&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/154&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/166&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/167&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/170&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/171&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/172&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/182&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/185&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/189&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/190&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/210&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/217&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/218&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/219&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/227&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/230&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/233&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/234&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/236&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/237&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/243&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/244&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/245&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/248&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/255&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/259&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/262&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/265&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/276&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/280&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/292&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/293&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/324&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/327&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/332&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/335&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/341&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/346&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/347&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/352&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/353&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/354&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/357&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/360&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/361&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/363&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/365&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/374&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/377&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/390&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/391&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/401&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/402&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/423&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/437&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/438&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/439&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/440&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/452&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/453&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/467&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/468&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/469&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/471&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/492&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/493&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/497&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/509&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/510&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/511&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/512&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/513&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/514&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/516&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/517&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/523&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/524&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/526&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/534&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/535&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/536&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/537&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/538&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/539&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/540&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/541&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/561&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/562&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/564&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/570&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/575&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/584&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/585&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/586&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/588&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/590&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/591&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/592&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/667&quot;],&quot;id&quot;:20,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/20&quot;}],&quot;info&quot;:{&quot;next&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location?page=2&quot;,&quot;pages&quot;:6,&quot;prev&quot;:null,&quot;count&quot;:108}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match header Content-Type == &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:17]</span>
+                <span class="scenario-name">Validate the response content from the location endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>703</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:11:01.582 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedResult = read (&#39;locationResponse.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;location&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">698</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">04:11:01.599 request:
+1 &gt; GET https://rickandmortyapi.com/api/location
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:11:02.293 response time in milliseconds: 692
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: max-age=259200
+1 &lt; cache-control: public
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 05 May 2021 08:11:02 GMT
+1 &lt; etag: W/&quot;5726-q/3KmIeCg5GoVW/GF8f6IOZK3xo&quot;
+1 &lt; expires: Sat, 08 May 2021 08:11:02 GMT
+1 &lt; server: Netlify
+1 &lt; x-language: 
+1 &lt; vary: Accept-Encoding
+1 &lt; x-nf-request-id: 8058ca6b-5e78-47c0-a413-d021e0ddfd5a
+1 &lt; age: 0
+1 &lt; x-country: DO
+1 &lt; x-powered-by: Express
+{&quot;results&quot;:[{&quot;created&quot;:&quot;2017-11-10T12:42:04.162Z&quot;,&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/71&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/116&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/117&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/120&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/127&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/155&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/303&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;],&quot;id&quot;:1,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/1&quot;},{&quot;created&quot;:&quot;2017-11-10T13:06:38.182Z&quot;,&quot;name&quot;:&quot;Abadango&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/6&quot;],&quot;id&quot;:2,&quot;type&quot;:&quot;Cluster&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/2&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:13.191Z&quot;,&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/8&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/42&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/43&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/44&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/48&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/53&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/56&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/61&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/69&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/72&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/73&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/74&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/77&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/78&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/85&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/86&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/95&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/118&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/119&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/123&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/135&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/143&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/152&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/164&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/165&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/187&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/200&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/206&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/209&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/215&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/220&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/229&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/231&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/235&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/267&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/274&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/278&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/281&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/283&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/284&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/285&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/286&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/287&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/288&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/289&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/291&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/294&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/298&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/299&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/322&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/325&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/328&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/330&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/345&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/359&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/366&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/378&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/385&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/392&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/461&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/462&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/463&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/464&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/465&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/466&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/472&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/473&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/474&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/475&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/476&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/477&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/478&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/479&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/480&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/481&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/482&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/483&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/484&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/485&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/486&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/487&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/488&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/489&quot;],&quot;id&quot;:3,&quot;type&quot;:&quot;Space station&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/3&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:20.569Z&quot;,&quot;name&quot;:&quot;Worldender&#39;s lair&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/10&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/81&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/208&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/226&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/340&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/375&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/382&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;],&quot;id&quot;:4,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/4&quot;},{&quot;created&quot;:&quot;2017-11-10T13:08:46.060Z&quot;,&quot;name&quot;:&quot;Anatomy Park&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/96&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/97&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/98&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/99&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/100&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/101&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/108&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/268&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/300&quot;],&quot;id&quot;:5,&quot;type&quot;:&quot;Microverse&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/5&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:09.102Z&quot;,&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/51&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/54&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/121&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/126&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/134&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/145&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/157&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/173&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/184&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/205&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/214&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/222&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/223&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/224&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/225&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/250&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/254&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/260&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/264&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/275&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/277&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/279&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/312&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/314&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/315&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/316&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/317&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/318&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/334&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/351&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/367&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/370&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/373&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/403&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/406&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/407&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/408&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/409&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/410&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/411&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/412&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/413&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/414&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/415&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/416&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/417&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/418&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/457&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/458&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/459&quot;],&quot;id&quot;:6,&quot;type&quot;:&quot;TV&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/6&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:17.136Z&quot;,&quot;name&quot;:&quot;Immortality Field Resort&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/204&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/320&quot;],&quot;id&quot;:7,&quot;type&quot;:&quot;Resort&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/7&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:22.551Z&quot;,&quot;name&quot;:&quot;Post-Apocalyptic Earth&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/25&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/52&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/68&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/110&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/111&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/140&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/156&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/228&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/323&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/342&quot;],&quot;id&quot;:8,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Post-Apocalyptic Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/8&quot;},{&quot;created&quot;:&quot;2017-11-10T13:09:29.566Z&quot;,&quot;name&quot;:&quot;Purge Planet&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/139&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/202&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/273&quot;],&quot;id&quot;:9,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/9&quot;},{&quot;created&quot;:&quot;2017-11-18T11:21:51.643Z&quot;,&quot;name&quot;:&quot;Venzenulon 7&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/33&quot;],&quot;id&quot;:10,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/10&quot;},{&quot;created&quot;:&quot;2017-11-18T11:26:03.325Z&quot;,&quot;name&quot;:&quot;Bepis 9&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;],&quot;id&quot;:11,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/11&quot;},{&quot;created&quot;:&quot;2017-11-18T11:29:27.857Z&quot;,&quot;name&quot;:&quot;Cronenberg Earth&quot;,&quot;residents&quot;:[],&quot;id&quot;:12,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Cronenberg Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/12&quot;},{&quot;created&quot;:&quot;2017-11-18T11:30:29.780Z&quot;,&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/55&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/132&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/146&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/148&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/163&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/178&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/310&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/387&quot;],&quot;id&quot;:13,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/13&quot;},{&quot;created&quot;:&quot;2017-11-18T11:31:15.248Z&quot;,&quot;name&quot;:&quot;Giant&#39;s Town&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/89&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/399&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/400&quot;],&quot;id&quot;:14,&quot;type&quot;:&quot;Fantasy town&quot;,&quot;dimension&quot;:&quot;Fantasy Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/14&quot;},{&quot;created&quot;:&quot;2017-11-18T11:32:26.752Z&quot;,&quot;name&quot;:&quot;Bird World&quot;,&quot;residents&quot;:[],&quot;id&quot;:15,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/15&quot;},{&quot;created&quot;:&quot;2017-11-18T11:43:20.075Z&quot;,&quot;name&quot;:&quot;St. Gloopy Noops Hospital&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/105&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/263&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/321&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/383&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/384&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/455&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/456&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/460&quot;],&quot;id&quot;:16,&quot;type&quot;:&quot;Space station&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/16&quot;},{&quot;created&quot;:&quot;2017-11-18T11:41:08.486Z&quot;,&quot;name&quot;:&quot;Earth (5-126)&quot;,&quot;residents&quot;:[],&quot;id&quot;:17,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Dimension 5-126&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/17&quot;},{&quot;created&quot;:&quot;2017-11-18T11:46:22.933Z&quot;,&quot;name&quot;:&quot;Mr. Goldenfold&#39;s dream&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/63&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/80&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/221&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/246&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/304&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/305&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/306&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/396&quot;],&quot;id&quot;:18,&quot;type&quot;:&quot;Dream&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/18&quot;},{&quot;created&quot;:&quot;2017-11-18T11:39:52.165Z&quot;,&quot;name&quot;:&quot;Gromflom Prime&quot;,&quot;residents&quot;:[],&quot;id&quot;:19,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/19&quot;},{&quot;created&quot;:&quot;2017-11-18T19:33:01.173Z&quot;,&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/9&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/13&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/50&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/59&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/64&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/66&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/76&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/103&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/107&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/109&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/113&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/115&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/124&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/128&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/137&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/138&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/141&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/147&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/149&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/151&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/154&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/166&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/167&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/170&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/171&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/172&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/182&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/185&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/189&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/190&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/210&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/217&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/218&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/219&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/227&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/230&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/233&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/234&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/236&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/237&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/243&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/244&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/245&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/248&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/255&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/259&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/262&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/265&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/276&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/280&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/292&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/293&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/324&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/327&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/332&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/335&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/341&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/346&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/347&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/352&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/353&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/354&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/357&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/360&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/361&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/363&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/365&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/374&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/377&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/390&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/391&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/401&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/402&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/423&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/437&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/438&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/439&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/440&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/452&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/453&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/467&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/468&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/469&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/471&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/492&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/493&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/497&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/509&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/510&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/511&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/512&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/513&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/514&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/516&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/517&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/523&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/524&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/526&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/534&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/535&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/536&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/537&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/538&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/539&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/540&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/541&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/561&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/562&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/564&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/570&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/575&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/584&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/585&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/586&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/588&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/590&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/591&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/592&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/667&quot;],&quot;id&quot;:20,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/20&quot;}],&quot;info&quot;:{&quot;next&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location?page=2&quot;,&quot;pages&quot;:6,&quot;prev&quot;:null,&quot;count&quot;:108}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == expectedResult</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:24]</span>
+                <span class="scenario-name">Validate that the page not found response is being handle on the character endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>738</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:11:01.654 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;location/900&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">737</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">04:11:01.658 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/900
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:11:02.392 response time in milliseconds: 734
+1 &lt; 404
+1 &lt; access-control-allow-origin: *
+1 &lt; content-length: 30
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 05 May 2021 08:11:03 GMT
+1 &lt; etag: W/&quot;1e-KQLHk60bcEy7DdICzHZFrEmAFio&quot;
+1 &lt; server: Netlify
+1 &lt; x-language: 
+1 &lt; x-powered-by: Express
+1 &lt; age: 1
+1 &lt; x-nf-request-id: dd4de51c-3e41-4221-b0cf-755f4c934684
+1 &lt; x-country: DO
+{&quot;error&quot;:&quot;Location not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

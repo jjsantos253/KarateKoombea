@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>testcases.endpoints.episode.episode</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-05-05 04:10:13 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Validate the response code from the episode endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>Validate the content type from the episode endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:17]"><span>[3:17]</span> <span>Validate the response content from the episode endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:24]"><span>[4:24]</span> <span>Validate that the page not found response is being handle on the episode endpoint</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">testcases/endpoints/episode/episode.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validate that the episode endpoint is retorning the right response body and status</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Validate the response code from the episode endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>513</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:10:11.461 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;episode&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">512</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">04:10:11.498 request:
+1 &gt; GET https://rickandmortyapi.com/api/episode
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:10:12.000 response time in milliseconds: 493
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: max-age=259200
+1 &lt; cache-control: public
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Mon, 03 May 2021 16:49:20 GMT
+1 &lt; etag: W/&quot;6dbf-pDyeQoqhxGF+im2jm74L3GoehVc&quot;
+1 &lt; expires: Thu, 06 May 2021 16:49:20 GMT
+1 &lt; server: Netlify
+1 &lt; x-language: 
+1 &lt; vary: Accept-Encoding
+1 &lt; x-nf-request-id: 221a493a-e414-4696-8840-05473ae0246a
+1 &lt; age: 141653
+1 &lt; x-country: DO
+1 &lt; x-powered-by: Express
+{&quot;results&quot;:[{&quot;air_date&quot;:&quot;December 2, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/62&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/127&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/144&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/158&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:33.798Z&quot;,&quot;name&quot;:&quot;Pilot&quot;,&quot;episode&quot;:&quot;S01E01&quot;,&quot;id&quot;:1,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/1&quot;},{&quot;air_date&quot;:&quot;December 9, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/46&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/63&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/80&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/221&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/246&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/304&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/305&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/306&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/396&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/397&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/398&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:33.916Z&quot;,&quot;name&quot;:&quot;Lawnmower Dog&quot;,&quot;episode&quot;:&quot;S01E02&quot;,&quot;id&quot;:2,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/2&quot;},{&quot;air_date&quot;:&quot;December 16, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/96&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/97&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/98&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/99&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/100&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/101&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/108&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/268&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/300&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.022Z&quot;,&quot;name&quot;:&quot;Anatomy Park&quot;,&quot;episode&quot;:&quot;S01E03&quot;,&quot;id&quot;:3,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/3&quot;},{&quot;air_date&quot;:&quot;January 13, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/87&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/191&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/270&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/337&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.129Z&quot;,&quot;name&quot;:&quot;M. Night Shaym-Aliens!&quot;,&quot;episode&quot;:&quot;S01E04&quot;,&quot;id&quot;:4,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/4&quot;},{&quot;air_date&quot;:&quot;January 20, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/41&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/89&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/116&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/117&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/120&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/193&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/238&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/303&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/333&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/399&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/400&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.236Z&quot;,&quot;name&quot;:&quot;Meeseeks and Destroy&quot;,&quot;episode&quot;:&quot;S01E05&quot;,&quot;id&quot;:5,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/5&quot;},{&quot;air_date&quot;:&quot;January 27, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/155&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/234&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/293&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.339Z&quot;,&quot;name&quot;:&quot;Rick Potion #9&quot;,&quot;episode&quot;:&quot;S01E06&quot;,&quot;id&quot;:6,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/6&quot;},{&quot;air_date&quot;:&quot;March 10, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/59&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/151&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/168&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/211&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/230&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/258&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/376&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/401&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.441Z&quot;,&quot;name&quot;:&quot;Raising Gazorpazorp&quot;,&quot;episode&quot;:&quot;S01E07&quot;,&quot;id&quot;:7,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/7&quot;},{&quot;air_date&quot;:&quot;March 17, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/37&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/54&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/91&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/134&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/145&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/153&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/157&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/176&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/183&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/184&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/195&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/214&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/222&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/250&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/277&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/279&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/314&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/315&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/316&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/317&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/318&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/351&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/367&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/370&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/373&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/402&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/403&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/404&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/406&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/407&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/408&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/409&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/410&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/411&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/412&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/413&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/414&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/415&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/416&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/417&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/418&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.543Z&quot;,&quot;name&quot;:&quot;Rixty Minutes&quot;,&quot;episode&quot;:&quot;S01E08&quot;,&quot;id&quot;:8,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/8&quot;},{&quot;air_date&quot;:&quot;March 24, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/192&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/243&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/307&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/419&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/420&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/421&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/422&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.645Z&quot;,&quot;name&quot;:&quot;Something Ricked This Way Comes&quot;,&quot;episode&quot;:&quot;S01E09&quot;,&quot;id&quot;:9,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/9&quot;},{&quot;air_date&quot;:&quot;April 7, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/19&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/39&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/53&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/77&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/78&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/79&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/84&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/85&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/86&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/103&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/113&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/118&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/119&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/152&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/164&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/177&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/209&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/215&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/232&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/274&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/285&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/290&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/294&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/298&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/299&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/330&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/339&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/349&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/359&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/381&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/424&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/425&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/426&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/427&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/428&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/429&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/430&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/431&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/432&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/433&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/434&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/663&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.747Z&quot;,&quot;name&quot;:&quot;Close Rick-counters of the Rick Kind&quot;,&quot;episode&quot;:&quot;S01E10&quot;,&quot;id&quot;:10,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/10&quot;},{&quot;air_date&quot;:&quot;April 14, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/210&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/282&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/308&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/327&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/331&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/333&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/344&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/423&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/436&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.850Z&quot;,&quot;name&quot;:&quot;Ricksy Business&quot;,&quot;episode&quot;:&quot;S01E11&quot;,&quot;id&quot;:11,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/11&quot;},{&quot;air_date&quot;:&quot;July 26, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/64&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/237&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/313&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/437&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/438&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/439&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/440&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.953Z&quot;,&quot;name&quot;:&quot;A Rickle in Time&quot;,&quot;episode&quot;:&quot;S02E01&quot;,&quot;id&quot;:12,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/12&quot;},{&quot;air_date&quot;:&quot;August 2, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/106&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/122&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/133&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/174&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/196&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/257&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/282&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/309&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/311&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/393&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/436&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/441&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/442&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/443&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/444&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/445&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/446&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/447&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/448&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/449&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/450&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/451&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.055Z&quot;,&quot;name&quot;:&quot;Mortynight Run&quot;,&quot;episode&quot;:&quot;S02E02&quot;,&quot;id&quot;:13,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/13&quot;},{&quot;air_date&quot;:&quot;August 9, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/36&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/50&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/90&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/188&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/301&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/336&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/355&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/372&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.158Z&quot;,&quot;name&quot;:&quot;Auto Erotic Assimilation&quot;,&quot;episode&quot;:&quot;S02E03&quot;,&quot;id&quot;:14,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/14&quot;},{&quot;air_date&quot;:&quot;August 16, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/76&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/109&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/128&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/141&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/154&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/236&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/244&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/248&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/259&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/262&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/280&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/324&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/352&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/391&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.261Z&quot;,&quot;name&quot;:&quot;Total Rickall&quot;,&quot;episode&quot;:&quot;S02E04&quot;,&quot;id&quot;:15,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/15&quot;},{&quot;air_date&quot;:&quot;August 23, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/24&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/115&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/124&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/138&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/161&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/162&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/172&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/182&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/199&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/212&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/213&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/253&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/255&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/309&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/331&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/344&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/346&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/347&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/452&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.364Z&quot;,&quot;name&quot;:&quot;Get Schwifty&quot;,&quot;episode&quot;:&quot;S02E05&quot;,&quot;id&quot;:16,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/16&quot;},{&quot;air_date&quot;:&quot;August 30, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/65&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/159&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/160&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/197&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/348&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/364&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/388&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.467Z&quot;,&quot;name&quot;:&quot;The Ricks Must Be Crazy&quot;,&quot;episode&quot;:&quot;S02E06&quot;,&quot;id&quot;:17,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/17&quot;},{&quot;air_date&quot;:&quot;September 13, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/55&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/66&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/132&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/146&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/148&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/163&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/178&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/310&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/353&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/354&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/374&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/387&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/453&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.569Z&quot;,&quot;name&quot;:&quot;Big Trouble in Little Sanchez&quot;,&quot;episode&quot;:&quot;S02E07&quot;,&quot;id&quot;:18,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/18&quot;},{&quot;air_date&quot;:&quot;September 20, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/51&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/105&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/121&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/126&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/133&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/153&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/173&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/199&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/205&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/223&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/224&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/225&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/254&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/260&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/263&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/264&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/275&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/312&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/321&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/334&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/371&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/383&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/384&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/455&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/456&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/457&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/458&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/459&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/460&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.669Z&quot;,&quot;name&quot;:&quot;Interdimensional Cable 2: Tempting Fate&quot;,&quot;episode&quot;:&quot;S02E08&quot;,&quot;id&quot;:19,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/19&quot;},{&quot;air_date&quot;:&quot;September 27, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/139&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/202&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/273&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/341&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.772Z&quot;,&quot;name&quot;:&quot;Look Who&#39;s Purging Now&quot;,&quot;episode&quot;:&quot;S02E09&quot;,&quot;id&quot;:20,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/20&quot;}],&quot;info&quot;:{&quot;next&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode?page=2&quot;,&quot;pages&quot;:3,&quot;prev&quot;:null,&quot;count&quot;:41}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">Validate the content type from the episode endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>540</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:10:11.488 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;episode&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">537</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">04:10:11.492 request:
+1 &gt; GET https://rickandmortyapi.com/api/episode
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:10:12.019 response time in milliseconds: 511
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: max-age=259200
+1 &lt; cache-control: public
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Mon, 03 May 2021 16:49:20 GMT
+1 &lt; etag: W/&quot;6dbf-pDyeQoqhxGF+im2jm74L3GoehVc&quot;
+1 &lt; expires: Thu, 06 May 2021 16:49:20 GMT
+1 &lt; server: Netlify
+1 &lt; x-language: 
+1 &lt; vary: Accept-Encoding
+1 &lt; x-nf-request-id: c6755dea-e4ee-406a-b217-c42a1dd1bdda
+1 &lt; age: 141653
+1 &lt; x-country: DO
+1 &lt; x-powered-by: Express
+{&quot;results&quot;:[{&quot;air_date&quot;:&quot;December 2, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/62&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/127&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/144&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/158&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:33.798Z&quot;,&quot;name&quot;:&quot;Pilot&quot;,&quot;episode&quot;:&quot;S01E01&quot;,&quot;id&quot;:1,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/1&quot;},{&quot;air_date&quot;:&quot;December 9, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/46&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/63&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/80&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/221&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/246&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/304&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/305&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/306&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/396&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/397&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/398&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:33.916Z&quot;,&quot;name&quot;:&quot;Lawnmower Dog&quot;,&quot;episode&quot;:&quot;S01E02&quot;,&quot;id&quot;:2,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/2&quot;},{&quot;air_date&quot;:&quot;December 16, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/96&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/97&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/98&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/99&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/100&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/101&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/108&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/268&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/300&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.022Z&quot;,&quot;name&quot;:&quot;Anatomy Park&quot;,&quot;episode&quot;:&quot;S01E03&quot;,&quot;id&quot;:3,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/3&quot;},{&quot;air_date&quot;:&quot;January 13, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/87&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/191&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/270&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/337&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.129Z&quot;,&quot;name&quot;:&quot;M. Night Shaym-Aliens!&quot;,&quot;episode&quot;:&quot;S01E04&quot;,&quot;id&quot;:4,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/4&quot;},{&quot;air_date&quot;:&quot;January 20, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/41&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/89&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/116&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/117&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/120&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/193&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/238&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/303&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/333&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/399&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/400&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.236Z&quot;,&quot;name&quot;:&quot;Meeseeks and Destroy&quot;,&quot;episode&quot;:&quot;S01E05&quot;,&quot;id&quot;:5,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/5&quot;},{&quot;air_date&quot;:&quot;January 27, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/155&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/234&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/293&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.339Z&quot;,&quot;name&quot;:&quot;Rick Potion #9&quot;,&quot;episode&quot;:&quot;S01E06&quot;,&quot;id&quot;:6,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/6&quot;},{&quot;air_date&quot;:&quot;March 10, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/59&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/151&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/168&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/211&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/230&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/258&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/376&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/401&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.441Z&quot;,&quot;name&quot;:&quot;Raising Gazorpazorp&quot;,&quot;episode&quot;:&quot;S01E07&quot;,&quot;id&quot;:7,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/7&quot;},{&quot;air_date&quot;:&quot;March 17, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/37&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/54&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/91&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/134&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/145&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/153&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/157&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/176&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/183&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/184&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/195&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/214&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/222&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/250&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/277&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/279&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/314&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/315&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/316&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/317&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/318&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/351&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/367&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/370&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/373&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/402&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/403&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/404&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/406&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/407&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/408&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/409&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/410&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/411&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/412&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/413&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/414&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/415&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/416&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/417&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/418&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.543Z&quot;,&quot;name&quot;:&quot;Rixty Minutes&quot;,&quot;episode&quot;:&quot;S01E08&quot;,&quot;id&quot;:8,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/8&quot;},{&quot;air_date&quot;:&quot;March 24, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/192&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/243&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/307&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/419&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/420&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/421&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/422&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.645Z&quot;,&quot;name&quot;:&quot;Something Ricked This Way Comes&quot;,&quot;episode&quot;:&quot;S01E09&quot;,&quot;id&quot;:9,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/9&quot;},{&quot;air_date&quot;:&quot;April 7, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/19&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/39&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/53&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/77&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/78&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/79&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/84&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/85&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/86&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/103&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/113&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/118&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/119&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/152&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/164&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/177&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/209&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/215&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/232&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/274&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/285&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/290&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/294&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/298&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/299&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/330&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/339&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/349&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/359&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/381&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/424&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/425&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/426&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/427&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/428&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/429&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/430&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/431&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/432&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/433&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/434&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/663&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.747Z&quot;,&quot;name&quot;:&quot;Close Rick-counters of the Rick Kind&quot;,&quot;episode&quot;:&quot;S01E10&quot;,&quot;id&quot;:10,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/10&quot;},{&quot;air_date&quot;:&quot;April 14, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/210&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/282&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/308&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/327&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/331&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/333&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/344&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/423&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/436&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.850Z&quot;,&quot;name&quot;:&quot;Ricksy Business&quot;,&quot;episode&quot;:&quot;S01E11&quot;,&quot;id&quot;:11,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/11&quot;},{&quot;air_date&quot;:&quot;July 26, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/64&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/237&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/313&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/437&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/438&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/439&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/440&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.953Z&quot;,&quot;name&quot;:&quot;A Rickle in Time&quot;,&quot;episode&quot;:&quot;S02E01&quot;,&quot;id&quot;:12,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/12&quot;},{&quot;air_date&quot;:&quot;August 2, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/106&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/122&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/133&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/174&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/196&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/257&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/282&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/309&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/311&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/393&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/436&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/441&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/442&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/443&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/444&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/445&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/446&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/447&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/448&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/449&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/450&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/451&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.055Z&quot;,&quot;name&quot;:&quot;Mortynight Run&quot;,&quot;episode&quot;:&quot;S02E02&quot;,&quot;id&quot;:13,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/13&quot;},{&quot;air_date&quot;:&quot;August 9, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/36&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/50&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/90&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/188&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/301&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/336&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/355&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/372&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.158Z&quot;,&quot;name&quot;:&quot;Auto Erotic Assimilation&quot;,&quot;episode&quot;:&quot;S02E03&quot;,&quot;id&quot;:14,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/14&quot;},{&quot;air_date&quot;:&quot;August 16, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/76&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/109&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/128&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/141&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/154&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/236&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/244&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/248&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/259&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/262&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/280&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/324&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/352&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/391&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.261Z&quot;,&quot;name&quot;:&quot;Total Rickall&quot;,&quot;episode&quot;:&quot;S02E04&quot;,&quot;id&quot;:15,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/15&quot;},{&quot;air_date&quot;:&quot;August 23, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/24&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/115&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/124&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/138&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/161&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/162&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/172&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/182&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/199&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/212&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/213&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/253&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/255&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/309&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/331&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/344&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/346&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/347&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/452&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.364Z&quot;,&quot;name&quot;:&quot;Get Schwifty&quot;,&quot;episode&quot;:&quot;S02E05&quot;,&quot;id&quot;:16,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/16&quot;},{&quot;air_date&quot;:&quot;August 30, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/65&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/159&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/160&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/197&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/348&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/364&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/388&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.467Z&quot;,&quot;name&quot;:&quot;The Ricks Must Be Crazy&quot;,&quot;episode&quot;:&quot;S02E06&quot;,&quot;id&quot;:17,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/17&quot;},{&quot;air_date&quot;:&quot;September 13, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/55&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/66&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/132&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/146&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/148&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/163&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/178&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/310&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/353&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/354&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/374&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/387&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/453&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.569Z&quot;,&quot;name&quot;:&quot;Big Trouble in Little Sanchez&quot;,&quot;episode&quot;:&quot;S02E07&quot;,&quot;id&quot;:18,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/18&quot;},{&quot;air_date&quot;:&quot;September 20, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/51&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/105&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/121&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/126&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/133&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/153&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/173&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/199&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/205&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/223&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/224&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/225&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/254&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/260&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/263&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/264&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/275&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/312&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/321&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/334&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/371&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/383&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/384&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/455&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/456&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/457&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/458&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/459&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/460&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.669Z&quot;,&quot;name&quot;:&quot;Interdimensional Cable 2: Tempting Fate&quot;,&quot;episode&quot;:&quot;S02E08&quot;,&quot;id&quot;:19,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/19&quot;},{&quot;air_date&quot;:&quot;September 27, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/139&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/202&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/273&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/341&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.772Z&quot;,&quot;name&quot;:&quot;Look Who&#39;s Purging Now&quot;,&quot;episode&quot;:&quot;S02E09&quot;,&quot;id&quot;:20,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/20&quot;}],&quot;info&quot;:{&quot;next&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode?page=2&quot;,&quot;pages&quot;:3,&quot;prev&quot;:null,&quot;count&quot;:41}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match header Content-Type == &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:17]</span>
+                <span class="scenario-name">Validate the response content from the episode endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>508</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:10:11.580 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedResult = read (&#39;episodeResponse.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;episode&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">502</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">04:10:11.589 request:
+1 &gt; GET https://rickandmortyapi.com/api/episode
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:10:12.086 response time in milliseconds: 493
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: max-age=259200
+1 &lt; cache-control: public
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Mon, 03 May 2021 16:49:20 GMT
+1 &lt; etag: W/&quot;6dbf-pDyeQoqhxGF+im2jm74L3GoehVc&quot;
+1 &lt; expires: Thu, 06 May 2021 16:49:20 GMT
+1 &lt; server: Netlify
+1 &lt; x-language: 
+1 &lt; vary: Accept-Encoding
+1 &lt; x-nf-request-id: aab6a3c1-5ff6-4a27-a3b6-b1ffc2e63b1f
+1 &lt; age: 141653
+1 &lt; x-country: DO
+1 &lt; x-powered-by: Express
+{&quot;results&quot;:[{&quot;air_date&quot;:&quot;December 2, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/62&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/127&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/144&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/158&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:33.798Z&quot;,&quot;name&quot;:&quot;Pilot&quot;,&quot;episode&quot;:&quot;S01E01&quot;,&quot;id&quot;:1,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/1&quot;},{&quot;air_date&quot;:&quot;December 9, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/46&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/63&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/80&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/221&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/246&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/304&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/305&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/306&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/396&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/397&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/398&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:33.916Z&quot;,&quot;name&quot;:&quot;Lawnmower Dog&quot;,&quot;episode&quot;:&quot;S01E02&quot;,&quot;id&quot;:2,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/2&quot;},{&quot;air_date&quot;:&quot;December 16, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/96&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/97&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/98&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/99&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/100&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/101&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/108&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/268&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/300&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.022Z&quot;,&quot;name&quot;:&quot;Anatomy Park&quot;,&quot;episode&quot;:&quot;S01E03&quot;,&quot;id&quot;:3,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/3&quot;},{&quot;air_date&quot;:&quot;January 13, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/87&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/191&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/270&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/337&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.129Z&quot;,&quot;name&quot;:&quot;M. Night Shaym-Aliens!&quot;,&quot;episode&quot;:&quot;S01E04&quot;,&quot;id&quot;:4,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/4&quot;},{&quot;air_date&quot;:&quot;January 20, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/41&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/89&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/116&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/117&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/120&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/193&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/238&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/303&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/333&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/399&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/400&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.236Z&quot;,&quot;name&quot;:&quot;Meeseeks and Destroy&quot;,&quot;episode&quot;:&quot;S01E05&quot;,&quot;id&quot;:5,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/5&quot;},{&quot;air_date&quot;:&quot;January 27, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/155&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/234&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/293&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.339Z&quot;,&quot;name&quot;:&quot;Rick Potion #9&quot;,&quot;episode&quot;:&quot;S01E06&quot;,&quot;id&quot;:6,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/6&quot;},{&quot;air_date&quot;:&quot;March 10, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/59&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/151&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/168&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/211&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/230&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/258&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/376&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/401&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.441Z&quot;,&quot;name&quot;:&quot;Raising Gazorpazorp&quot;,&quot;episode&quot;:&quot;S01E07&quot;,&quot;id&quot;:7,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/7&quot;},{&quot;air_date&quot;:&quot;March 17, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/37&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/54&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/91&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/134&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/145&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/153&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/157&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/176&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/183&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/184&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/195&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/214&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/222&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/250&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/277&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/279&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/314&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/315&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/316&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/317&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/318&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/351&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/367&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/370&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/373&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/402&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/403&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/404&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/406&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/407&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/408&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/409&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/410&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/411&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/412&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/413&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/414&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/415&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/416&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/417&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/418&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.543Z&quot;,&quot;name&quot;:&quot;Rixty Minutes&quot;,&quot;episode&quot;:&quot;S01E08&quot;,&quot;id&quot;:8,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/8&quot;},{&quot;air_date&quot;:&quot;March 24, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/192&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/243&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/307&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/419&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/420&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/421&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/422&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.645Z&quot;,&quot;name&quot;:&quot;Something Ricked This Way Comes&quot;,&quot;episode&quot;:&quot;S01E09&quot;,&quot;id&quot;:9,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/9&quot;},{&quot;air_date&quot;:&quot;April 7, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/19&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/39&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/53&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/77&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/78&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/79&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/84&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/85&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/86&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/103&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/113&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/118&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/119&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/152&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/164&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/177&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/209&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/215&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/232&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/274&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/285&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/290&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/294&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/298&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/299&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/330&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/339&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/349&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/359&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/381&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/424&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/425&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/426&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/427&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/428&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/429&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/430&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/431&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/432&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/433&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/434&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/663&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.747Z&quot;,&quot;name&quot;:&quot;Close Rick-counters of the Rick Kind&quot;,&quot;episode&quot;:&quot;S01E10&quot;,&quot;id&quot;:10,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/10&quot;},{&quot;air_date&quot;:&quot;April 14, 2014&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/58&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/88&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/210&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/251&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/282&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/295&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/308&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/326&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/327&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/331&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/333&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/344&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/389&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/405&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/423&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/436&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.850Z&quot;,&quot;name&quot;:&quot;Ricksy Business&quot;,&quot;episode&quot;:&quot;S01E11&quot;,&quot;id&quot;:11,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/11&quot;},{&quot;air_date&quot;:&quot;July 26, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/64&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/237&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/313&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/437&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/438&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/439&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/440&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.953Z&quot;,&quot;name&quot;:&quot;A Rickle in Time&quot;,&quot;episode&quot;:&quot;S02E01&quot;,&quot;id&quot;:12,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/12&quot;},{&quot;air_date&quot;:&quot;August 2, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/106&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/122&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/133&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/136&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/174&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/196&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/242&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/257&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/282&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/309&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/311&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/393&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/436&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/441&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/442&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/443&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/444&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/445&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/446&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/447&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/448&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/449&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/450&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/451&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.055Z&quot;,&quot;name&quot;:&quot;Mortynight Run&quot;,&quot;episode&quot;:&quot;S02E02&quot;,&quot;id&quot;:13,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/13&quot;},{&quot;air_date&quot;:&quot;August 9, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/36&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/50&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/90&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/188&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/249&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/301&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/336&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/355&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/372&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.158Z&quot;,&quot;name&quot;:&quot;Auto Erotic Assimilation&quot;,&quot;episode&quot;:&quot;S02E03&quot;,&quot;id&quot;:14,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/14&quot;},{&quot;air_date&quot;:&quot;August 16, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/76&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/109&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/128&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/141&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/154&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/236&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/244&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/248&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/259&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/262&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/280&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/324&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/352&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/391&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.261Z&quot;,&quot;name&quot;:&quot;Total Rickall&quot;,&quot;episode&quot;:&quot;S02E04&quot;,&quot;id&quot;:15,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/15&quot;},{&quot;air_date&quot;:&quot;August 23, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/24&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/115&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/124&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/138&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/161&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/162&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/172&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/182&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/199&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/212&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/213&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/241&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/253&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/255&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/309&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/329&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/331&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/344&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/346&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/347&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/395&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/452&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.364Z&quot;,&quot;name&quot;:&quot;Get Schwifty&quot;,&quot;episode&quot;:&quot;S02E05&quot;,&quot;id&quot;:16,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/16&quot;},{&quot;air_date&quot;:&quot;August 30, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/65&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/129&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/159&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/160&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/197&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/207&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/266&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/348&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/364&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/388&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.467Z&quot;,&quot;name&quot;:&quot;The Ricks Must Be Crazy&quot;,&quot;episode&quot;:&quot;S02E06&quot;,&quot;id&quot;:17,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/17&quot;},{&quot;air_date&quot;:&quot;September 13, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/55&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/66&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/131&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/132&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/146&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/148&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/163&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/178&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/180&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/181&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/240&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/272&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/310&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/353&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/354&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/358&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/374&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/386&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/387&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/453&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.569Z&quot;,&quot;name&quot;:&quot;Big Trouble in Little Sanchez&quot;,&quot;episode&quot;:&quot;S02E07&quot;,&quot;id&quot;:18,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/18&quot;},{&quot;air_date&quot;:&quot;September 20, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/51&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/105&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/121&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/126&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/133&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/153&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/173&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/199&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/205&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/223&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/224&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/225&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/254&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/260&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/263&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/264&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/275&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/312&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/321&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/334&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/362&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/371&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/383&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/384&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/435&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/454&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/455&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/456&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/457&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/458&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/459&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/460&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.669Z&quot;,&quot;name&quot;:&quot;Interdimensional Cable 2: Tempting Fate&quot;,&quot;episode&quot;:&quot;S02E08&quot;,&quot;id&quot;:19,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/19&quot;},{&quot;air_date&quot;:&quot;September 27, 2015&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/139&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/202&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/273&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/341&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:35.772Z&quot;,&quot;name&quot;:&quot;Look Who&#39;s Purging Now&quot;,&quot;episode&quot;:&quot;S02E09&quot;,&quot;id&quot;:20,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/20&quot;}],&quot;info&quot;:{&quot;next&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode?page=2&quot;,&quot;pages&quot;:3,&quot;prev&quot;:null,&quot;count&quot;:41}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == expectedResult</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:24]</span>
+                <span class="scenario-name">Validate that the page not found response is being handle on the episode endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>923</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">04:10:12.044 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;episode/900&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">919</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">04:10:12.058 request:
+1 &gt; GET https://rickandmortyapi.com/api/episode/900
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:10:12.974 response time in milliseconds: 916
+1 &lt; 404
+1 &lt; access-control-allow-origin: *
+1 &lt; content-length: 29
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 05 May 2021 08:10:13 GMT
+1 &lt; etag: W/&quot;1d-D43jnwgTrNTNMfIU3s4TIu1Sk2o&quot;
+1 &lt; server: Netlify
+1 &lt; x-language: 
+1 &lt; x-powered-by: Express
+1 &lt; age: 0
+1 &lt; x-nf-request-id: c03a5077-ab7f-40d1-a0b9-426f557b02f0
+1 &lt; x-country: DO
+{&quot;error&quot;:&quot;Episode not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
